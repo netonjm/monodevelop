@@ -253,7 +253,7 @@ namespace Mono.TextEditor
 		}
 
 		TextViewMarginAccessibilityProxy accessible;
-		public override AccessibilityElementProxy Accessible {
+		public override AccessibilityElementProxy AccessibleProxy {
 			get {
 				if (accessible == null) {
 					accessible = new TextViewMarginAccessibilityProxy ();
@@ -268,7 +268,7 @@ namespace Mono.TextEditor
 				throw new ArgumentNullException ("textEditor");
 
 			// Overwrite the default margin role
-			Accessible.SetRole (AtkCocoa.Roles.AXTextArea);
+			AccessibleProxy.SetRole (AtkCocoa.Roles.AXTextArea);
 			accessible.Margin = this;
 
 			this.textEditor = textEditor;

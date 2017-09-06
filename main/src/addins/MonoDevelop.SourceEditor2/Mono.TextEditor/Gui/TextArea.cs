@@ -344,37 +344,37 @@ namespace Mono.TextEditor
 			textEditorData.Parent = editor;
 
 			iconMargin = new IconMargin (editor);
-			iconMargin.Accessible.Label = GettextCatalog.GetString ("Icon Margin");
-			iconMargin.Accessible.Help = GettextCatalog.GetString ("Icon margin contains breakpoints and bookmarks");
-			iconMargin.Accessible.Identifier = "TextArea.IconMargin";
-			iconMargin.Accessible.GtkParent = this;
-			Accessible.AddAccessibleElement (iconMargin.Accessible);
+			iconMargin.AccessibleProxy.Label = GettextCatalog.GetString ("Icon Margin");
+			iconMargin.AccessibleProxy.Help = GettextCatalog.GetString ("Icon margin contains breakpoints and bookmarks");
+			iconMargin.AccessibleProxy.Identifier = "TextArea.IconMargin";
+			iconMargin.AccessibleProxy.GtkParent = this;
+			Accessible.AddAccessibleElement (iconMargin.AccessibleProxy);
 
 			gutterMargin = new GutterMargin (editor);
-			gutterMargin.Accessible.Label = GettextCatalog.GetString ("Line Numbers");
-			gutterMargin.Accessible.Help = GettextCatalog.GetString ("Shows the line numbers for the current file");
-			gutterMargin.Accessible.Identifier = "TextArea.GutterMargin";
-			gutterMargin.Accessible.GtkParent = this;
-			Accessible.AddAccessibleElement (gutterMargin.Accessible);
+			gutterMargin.AccessibleProxy.Label = GettextCatalog.GetString ("Line Numbers");
+			gutterMargin.AccessibleProxy.Help = GettextCatalog.GetString ("Shows the line numbers for the current file");
+			gutterMargin.AccessibleProxy.Identifier = "TextArea.GutterMargin";
+			gutterMargin.AccessibleProxy.GtkParent = this;
+			Accessible.AddAccessibleElement (gutterMargin.AccessibleProxy);
 
 			actionMargin = new ActionMargin (editor);
-			actionMargin.Accessible.Identifier = "TextArea.ActionMargin";
-			actionMargin.Accessible.GtkParent = this;
-			Accessible.AddAccessibleElement (actionMargin.Accessible);
+			actionMargin.AccessibleProxy.Identifier = "TextArea.ActionMargin";
+			actionMargin.AccessibleProxy.GtkParent = this;
+			Accessible.AddAccessibleElement (actionMargin.AccessibleProxy);
 
 			foldMarkerMargin = new FoldMarkerMargin (editor);
-			foldMarkerMargin.Accessible.Label = GettextCatalog.GetString ("Fold Margin");
-			foldMarkerMargin.Accessible.Help = GettextCatalog.GetString ("Shows method and class folds");
-			foldMarkerMargin.Accessible.Identifier = "TextArea.FoldMarkerMargin";
-			foldMarkerMargin.Accessible.GtkParent = this;
-			Accessible.AddAccessibleElement (foldMarkerMargin.Accessible);
+			foldMarkerMargin.AccessibleProxy.Label = GettextCatalog.GetString ("Fold Margin");
+			foldMarkerMargin.AccessibleProxy.Help = GettextCatalog.GetString ("Shows method and class folds");
+			foldMarkerMargin.AccessibleProxy.Identifier = "TextArea.FoldMarkerMargin";
+			foldMarkerMargin.AccessibleProxy.GtkParent = this;
+			Accessible.AddAccessibleElement (foldMarkerMargin.AccessibleProxy);
 
 			textViewMargin = new TextViewMargin (editor);
-			textViewMargin.Accessible.Label = GettextCatalog.GetString ("Text Editor");
-			textViewMargin.Accessible.Help = GettextCatalog.GetString ("Edit the current file");
-			textViewMargin.Accessible.Identifier = "TextArea.TextViewMargin";
-			textViewMargin.Accessible.GtkParent = this;
-			Accessible.AddAccessibleElement (textViewMargin.Accessible);
+			textViewMargin.AccessibleProxy.Label = GettextCatalog.GetString ("Text Editor");
+			textViewMargin.AccessibleProxy.Help = GettextCatalog.GetString ("Edit the current file");
+			textViewMargin.AccessibleProxy.Identifier = "TextArea.TextViewMargin";
+			textViewMargin.AccessibleProxy.GtkParent = this;
+			Accessible.AddAccessibleElement (textViewMargin.AccessibleProxy);
 
 			margins.Add (iconMargin);
 			margins.Add (gutterMargin);
