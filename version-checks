@@ -17,7 +17,7 @@ DEP[0]=md-addins
 DEP_NAME[0]=MDADDINS
 DEP_PATH[0]=${top_srcdir}/../md-addins
 DEP_MODULE[0]=git@github.com:xamarin/md-addins.git
-DEP_NEEDED_VERSION[0]=89efa3150fed0107d13a6563d0b7ae08be5e7496
+DEP_NEEDED_VERSION[0]=0fa0659dfd0c7b07769676ad3e306fdb5265f284
 DEP_BRANCH_AND_REMOTE[0]="automatic-signing-15.4 origin/automatic-signing-15.4"
 
 # heap-shot
