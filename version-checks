@@ -17,8 +17,8 @@ DEP[0]=md-addins
 DEP_NAME[0]=MDADDINS
 DEP_PATH[0]=${top_srcdir}/../md-addins
 DEP_MODULE[0]=git@github.com:xamarin/md-addins.git
-DEP_NEEDED_VERSION[0]=5eb9e0ab8f64939d0df92d53e10944ba127579e3
-DEP_BRANCH_AND_REMOTE[0]="master origin/master"
+DEP_NEEDED_VERSION[0]=e5af3d8810eca17511af086280e7b6f802ebd198
+DEP_BRANCH_AND_REMOTE[0]="mac-cookies origin/mac-cookies"
 
 # heap-shot
 DEP[1]=heap-shot
