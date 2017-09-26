@@ -159,13 +159,14 @@ namespace Mono.TextEditor
 			AccessibleProxy.AddAccessibleChildren(children);
 		}
 
+		Button fakeParent = new Button(); //margin can't be widget, and gtkparent can't be null  
 		IEnumerable<AccessibilityElementProxy> GetAccessibleChildren()
 		{
 			var result = editor.Document.Lines
 							   .SelectMany(line => editor.Document.GetMarkers(line))
 							   .OfType<MarginMarker>()
 							   .Where(mr => !(mr is HoverDebugIconMarker))
-							   .Select(mark => new MarkerAccessible(this, mark).Accessible);
+			                   .Select(mark => new MarkerAccessible(fakeParent, mark).Accessible);
 			return result;
 		}
 

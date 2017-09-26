@@ -34,7 +34,7 @@ using MonoDevelop.Components.AtkCocoaHelper;
 
 namespace Mono.TextEditor
 {
-	abstract class Margin : Gtk.Widget, IDisposable 
+	abstract class Margin : IDisposable 
 	{
 		public abstract double Width {
 			get;
