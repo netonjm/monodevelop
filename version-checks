@@ -17,7 +17,7 @@ DEP[0]=md-addins
 DEP_NAME[0]=MDADDINS
 DEP_PATH[0]=${top_srcdir}/../md-addins
 DEP_MODULE[0]=git@github.com:xamarin/md-addins.git
-DEP_NEEDED_VERSION[0]=800302de7cf0a0e4a2a605cefe72a85be77ae524
+DEP_NEEDED_VERSION[0]=49f6b177bcda1225bc627f2b2891861edd5c3175
 DEP_BRANCH_AND_REMOTE[0]="bump-forms-240 origin/bump-forms-240"
 
 # heap-shot
